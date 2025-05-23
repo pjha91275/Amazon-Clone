@@ -449,148 +449,121 @@ ul a {
     margin-bottom: 7.2px;
 } 
 
-/* ---------- REFINED RESPONSIVE STYLES ---------- */
-
-/* Large Screens to Tablets */
-@media (max-width: 1320px) {
-  .grid-13 {
-    grid-template-areas: "Cooker Cooker" "Coffee Pans";
-  }
+/* ---------- RESPONSIVE PART ---------- */
+@media(max-width: 1320px) {
+    .grid5 {
+        display: grid;
+        grid-template-columns: 90px 90px 90px;
+    }
 }
 
-/* Tablets and Medium Screens */
 @media (max-width: 992px) {
-  .nav-search {
-    width: 70%;
-  }
+    .nav-search {
+        width: 70%;
+    }
 
-  .box {
-    width: 90%;
-    height: auto;
-  }
+    .box {
+        width: 130%;
+        height: 28rem
+    }
 
-  .shop-section {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    justify-content: center;
-    margin: 0 10px;
-  }
+    .link {
+        margin-top: 40px;
+    }
+
+    .shop-section,
+    .shop-section1 {
+        display: grid;
+        grid-template-columns: repeat(2, 0.4fr);
+        gap: 40px;
+        /* border: 2px solid black; */
+        margin-right: 0px;
+        margin-left: 0px;
+        align-content: stretch;
+        justify-content: start;
+    }
 }
 
-/* Small Screens (Tablets & Landscape Phones) */
 @media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: stretch;
-    padding: 10px;
-    gap: 10px;
-    position: fixed;
-    width: 100vw;
-    background: linear-gradient(45deg, #b3ffff, #b3ffe6);
-    z-index: 1000;
-  }
+    .navbar {
+        flex-direction: row;
+        height: auto;
+    }
 
-  .nav-logo {
-    display: none;
-  }
+    .nav-search {
+        width: 85%;
+        margin: 10px 0;
+    }
 
-  .nav-search {
-    width: 90%;
-    margin: 10px auto;
-    flex-wrap: wrap;
-  }
+    .panel {
+        flex-wrap: nowrap;
+    }
 
-  .panel {
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 10px 0;
-  }
-
-  .panel-ops p {
-    margin: 4px;
-    font-size: 0.85rem;
-  }
-
-  .box {
-    width: 95%;
-    height: auto;
-  }
-
-  .hero-section {
-    height: 30vh;
-    margin-top: 60px; /* space for fixed navbar */
-  }
+    .box {
+        width: 130%;
+    }
 }
 
-/* Extra Small Screens (Phones) */
 @media (max-width: 576px) {
-  .nav-address,
-  .nav-signin,
-  .nav-return,
-  .nav-cart,
-  .nav-language {
-    display: none;
-  }
+    .hero_section {
+        height: 30vh;
+    }
 
-  .hero-msg {
-    font-size: 0.75rem;
-  }
+    .box {
+        width: 95%;
+    }
 
-  .foot-panel2 {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
+    /* Adjusting link spacing and font size for better readability on smaller screens */
+    .panel-ops a {
 
-  .foot-panel2 ul {
-    margin-bottom: 20px;
-  }
+        font-size: 10px;
+    }
 
-  .box h2 {
-    font-size: 1rem;
-  }
+    .nav-cart i {
+        font-size: 0px;
+    }
 
-  .slide img {
-    height: 120px;
-    width: auto;
-  }
+    .cart-icon {
+        font-size: 0px;
+    }
 
-  .grid,
-  .grid-13 {
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-  }
+    .returns {
+        font-size: 0rem;
+    }
+
+    .orders {
+        font-size: 0rem;
+        font-weight: 0;
+    }
+
+    .hero-msg {
+        font-size: 0.5rem;
+    }
+
+    .foot-panel2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .foot-panel2 ul {
+        margin-bottom: 20px;
+    }
 }
 
-/* Very Small Devices */
 @media (max-width: 400px) {
-  .grid-13 {
-    grid-template-columns: 1fr 1fr;
-    gap: 8px;
-  }
-
-  .hero-msg {
-    font-size: 0.65rem;
-  }
-
-  h2 {
-    font-size: 1rem;
-  }
+    .grid5 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* auto-fit columns */
+        gap: 10px;
+        margin-bottom: 20px;
+    }
 }
 
-/* Global image scaling */
-img {
-  max-width: 100%;
-  height: auto;
-}
 
-body {
-  overflow-x: hidden;
-  padding-bottom: 80px; /* to prevent content being hidden behind fixed navbar */
+/* Minor universal tweak for all images */
+.img {
+    max-width: 100%;
+    height: auto;
 }
-
-* {
-  box-sizing: border-box;
-  white-space: normal;
-} 
