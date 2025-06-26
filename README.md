@@ -1,42 +1,50 @@
 # Amazon.com Clone 🛒
 
-A static, responsive clone of Amazon's homepage created using only HTML and CSS. This project focuses on layout structuring, visual hierarchy, and section-based UI similar to the real Amazon landing page.
+A static clone of Amazon's homepage created using only HTML and CSS. This project focuses on structured layout, visual hierarchy, and clean UI sections inspired by the real Amazon landing page. The design includes basic responsiveness across screen sizes.
+
+---
 
 ## 🔧 Tech Stack
 - HTML5
 - CSS3 (Flexbox & Media Queries)
 
+---
+
 ## 📱 Features
-- Header with logo, search bar, navigation, and language/account options
-- Valentine's Day banner with centered marketing layout
-- Sectioned product categories like:
+- Header with logo, search bar, and top navigation
+- Promotional banner section (e.g., Valentine's Day offer)
+- Multiple product categories such as:
   - Gaming accessories
   - Home essentials
   - Fashion deals
   - Kitchen appliances
   - Top picks for India and Video Games
-- Visual-only product display blocks
-- Static footer with structured links and dropdown-like UI
-- Responsive design for various screen widths
+- Product cards and content blocks (visual only)
+- Footer with multi-column layout and dropdown-like UI
+- Works on various screen sizes (basic responsive design)
+
+> 🔄 This project is **not limited to GitHub Pages** — it also runs **smoothly and quickly** when cloned and opened locally in VS Code using Live Server.
+
+---
 
 ## 🚫 Limitations
-- All elements are **non-clickable** (static frontend only)
-- No JavaScript or backend functionality
-- No interactive popups, login, cart, or dynamic behavior
+- All elements are **non-clickable** — purely visual (static frontend)
+- No JavaScript or backend logic
+- No actual cart, login, or product linking functionality
+
+---
 
 ## 🚀 Live Demo
 [Click to View](https://pjha91275.github.io/Amazon-Clone/)
 
-## 📷 Screenshots
-| Desktop View (Hero) | Category Sections | Footer |
-|---------------------|--------------------|--------|
-| ![](screenshots/hero.png) | ![](screenshots/categories.png) | ![](screenshots/footer.png) |
-
-*(Make sure you save your screenshots inside a `screenshots/` folder in your repo and rename them to match the names above.)*
+---
 
 ## 📌 Status
 ✅ Project Completed (HTML + CSS only)
 
+---
+
 ## ✍️ Author
 **Prince Jha**
+
 
